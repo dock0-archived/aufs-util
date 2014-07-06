@@ -1,0 +1,6 @@
+[submodule "kernels"]
+	path = kernels
+	url = git://github.com/akerl/kernels.git
+[submodule "host_config"]
+	path = host_config
+	url = git://github.com/dock0/host_config.git

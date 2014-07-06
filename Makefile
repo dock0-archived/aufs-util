@@ -15,10 +15,12 @@ container: build_container
 
 build:
 	git submodule update --init
-
+	./meta/build.rb
+	rm -f aufs-util.tar.xz
+	tar -cJf aufs-util.tar.xz -C build/ .
 
 push:
-	targit -a .github -c -f dock0/aufs-util latest build/aufs-util.tar.xz
+	targit -a .github -c -f dock0/aufs-util latest aufs-util.tar.xz
 
 local: build push
 

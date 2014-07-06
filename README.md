@@ -11,7 +11,7 @@ Run `make`. To start a shell in the build environment for manual actions, run `m
 
 ## License
 
-The aufs-util code is released under the GNU Public License. See the bundled `./build/LICENSE` file for details.
+The aufs-util code is released under the GNU Public License. See `etc/aufs-util/LICENSE` in the release tarball.
 
 The Dockerfile and Makefile are released under the MIT License. See the bundled LICENSE file for details.
 

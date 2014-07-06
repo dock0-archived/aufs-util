@@ -20,13 +20,13 @@ end
 
 FileUtils.rm_rf 'src'
 FileUtils.rm_rf 'build'
-FileUtils.mkdir_p 'build/etc/aufs'
+FileUtils.mkdir_p 'build/etc/aufs-util'
 
 system 'git clone git://git.code.sf.net/p/aufs/aufs-util src'
-FileUtils.cp 'src/COPYING', 'build/etc/aufs-util/LICENSE'
 
 Dir.chdir('src') do
   system 'git checkout aufs3.x-rcN'
   system "CPPFLAGS='-I /opt/build/sources/linux-#{version}/usr/include' make"
   system 'DESTDIR=../build make install'
+  FileUtils.cp 'COPYING', '../build/etc/aufs-util/LICENSE'
 end

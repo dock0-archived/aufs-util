@@ -1,3 +1,5 @@
+**Inactive:** Now that OverlayFS is being merged into the kernel, I'm transitioning away from AUFS
+
 aufs-util
 =======
 

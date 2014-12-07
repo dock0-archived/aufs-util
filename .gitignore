@@ -1,4 +1,6 @@
 build/
+archives/
+sources/
 src/
 .github
 aufs-util.tar.xz

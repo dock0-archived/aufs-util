@@ -4,6 +4,6 @@ docker run \
     --rm -t -i \
     -v $SSH_AUTH_SOCK:/auth.sock \
     -e SSH_AUTH_SOCK=/auth.sock \
-    -v $(pwd):/opt/aufs-util \
+    -v $(pwd):/opt/build \
     -v ~/.gitconfig:/.gitconfig \
     aufs-util $1
